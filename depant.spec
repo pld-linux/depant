@@ -39,12 +39,11 @@ jest sprawdzany pod kątem haseł dostarczonych przez użytkownika.
 %setup -q -n %{name}
 
 %build
-%{__python} setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install \
-	--optimize=2 \
+%py_install \
 	--prefix=%{_prefix} \
 	--install-scripts=%{_bindir} \
 	--root=$RPM_BUILD_ROOT
