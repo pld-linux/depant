@@ -8,6 +8,7 @@ Group:		Applications/Console
 Source0:	http://midnightresearch.com/local/packages/depant/%{name}-%{version}.tgz
 # Source0-md5:	d1f7af5228436ff1d3816dffd1f2e458
 URL:		http://midnightresearch.com/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python >= 1:2.5
 BuildRequires:	python-setuptools
 Requires:	hydra >= 5.4
